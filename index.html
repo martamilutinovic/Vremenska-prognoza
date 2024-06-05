@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="sr">
+<head>
+    <meta charset="UTF-8">
+    <title>Vremenska prognoza - Početna</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <h1>Turistička agencija "Planinar"</h1>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Početna</a></li>
+                <li><a href="autor.html">O autoru</a></li>
+                <li><a href="uputstvo.html">Uputstvo</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        
+        <form id="cityForm">
+            <label for="citySelect">Izaberite grad:</label>
+            <select id="citySelect">
+                <option value="Beograd">Beograd</option>
+                <option value="Novi Sad">Novi Sad</option>
+                <option value="Niš">Niš</option>
+                <option value="Kragujevac">Kragujevac</option>
+                <option value="Subotica">Subotica</option>
+                <option value="Zrenjanin">Zrenjanin</option>
+                <option value="Pančevo">Pančevo</option>
+                <option value="Vršac">Vršac</option>
+                <option value="Kraljevo">Kraljevo</option>
+                <option value="Smederevo">Smederevo</option>
+            </select>
+            <button type="submit">Prikaži prognozu</button>
+        </form>
+        <iframe id="weatherIframe" src="http://www.naslovi.net/vremenska-prognoza/beograd" width="600" height="700"></iframe>
+        <div id="touristInfo"></div>
+    </main>
+    <script src="js/scripts.js"></script>
+</body>
+</html>
